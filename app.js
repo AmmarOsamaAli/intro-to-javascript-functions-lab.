@@ -23,11 +23,11 @@ const isAdult = function (age) {
     else if (age < 18 && age > 0)
         return "Minor"
     else {
-        console.log("ERROR: please enter a postive number for the age")
+        return "ERROR: please enter a postive number for the age"
     }
 }
 
-console.log(`Excersise 2 Result: ${isAdult(18)}`)
+console.log(`Excersise 2 Result: ${isAdult(16)}`)
 console.log(`=================================================`)
 
 
@@ -41,7 +41,7 @@ const isCharAVowel = (char) => {
     }
 }
 
-console.log('Exercise 3 Result:', isCharAVowel("a"));
+console.log('Exercise 3 Result:', isCharAVowel("e"));
 console.log(`=================================================`)
 
 
@@ -61,7 +61,7 @@ const greetUser = function (name, time) {
     return `Good ${time}, ${name}!`
 }
 
-console.log("Excersise 5 Result:", greetUser("Ahmed", "Afternoon"))
+console.log("Excersise 5 Result:", greetUser("Yousif", "Night"))
 console.log(`=================================================`)
 
 
@@ -99,11 +99,11 @@ const convertTemperature = function(temprature, degree){
     else if(degree === "F" || degree === "f")
         return temprature = (temprature - 32) * 5/9
     else {
-        return "Please enter F or C for degree"
+        return "Please enter F or C"
     }
 }
 
-console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+console.log('Exercise 8 Result:', convertTemperature(32, "F"));
 console.log(`=================================================`)
 
 
@@ -119,11 +119,11 @@ const basicCalculator = (num1, num2, operation) => {
     else if(operation === "divide")
         return num1 / num2
     else{
-        return "Please provide a one of the following operations. add, subtract, multiply, divide"
+        return "Please provide one of the following operations. add, subtract, multiply, or divide"
     }
 }
 
-console.log('Exercise 9 Result:', basicCalculator(10, 5, "divide"));
+console.log('Exercise 9 Result:', basicCalculator(10, 5, "multiply"));
 console.log(`=================================================`)
 
 
