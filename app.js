@@ -83,6 +83,8 @@ console.log(`=================================================`)
 
 //Excersise 7: calculateTip() -> using decleration fucntion
 function calculateTip(bill, tipPercentage){
+    if (bill < 0|| tipPercentage < 0)
+        return "Please provide a postive value"
     let tip = bill/100 * tipPercentage
     return tip
 }
