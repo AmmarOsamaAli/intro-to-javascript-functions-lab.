@@ -1,0 +1,129 @@
+//Excersise 1: maxOfTwoNumbers -> using decleration fucntion
+
+function maxOfTwoNumbers(num1, num2) {
+    if (num1 > num2)
+        return num1
+    else if (num2 > num1)
+        return num2
+    else {
+        return console.log("Number 1 is Equal to Number2")
+    }
+}
+
+console.log(`Excersise 1 Result: ${maxOfTwoNumbers(5, 9)}`)
+console.log(`=================================================`)
+
+
+
+//Excersise 2: isAdult() -> using expression function
+
+const isAdult = function (age) {
+    if (age >= 18)
+        return "Adult"
+    else if (age < 18 && age > 0)
+        return "Minor"
+    else {
+        console.log("ERROR: please enter a postive number for the age")
+    }
+}
+
+console.log(`Excersise 2 Result: ${isAdult(18)}`)
+console.log(`=================================================`)
+
+
+
+//Excersise 3: isCharAVowel() -> using arrow function
+const isCharAVowel = (char) => {
+    if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u')
+        return "True"
+    else {
+        return "False"
+    }
+}
+
+console.log('Exercise 3 Result:', isCharAVowel("a"));
+console.log(`=================================================`)
+
+
+
+//Excersise 4: generateEmail() -> using decleration fucntion
+function generateEmail(name, domain) {
+    return `${name}@${domain}`
+}
+
+console.log('Exercise 4 Result:', generateEmail("ammarali", "javascript.com"));
+console.log(`=================================================`)
+
+
+
+//Excersise 5: greetUser() -> expression function
+const greetUser = function (name, time) {
+    return `Good ${time}, ${name}!`
+}
+
+console.log("Excersise 5 Result:", greetUser("Ahmed", "Afternoon"))
+console.log(`=================================================`)
+
+
+
+//Excersise 6: maxOfThree() -> using arrow function
+const maxOfThree = (num1, num2, num3) => {
+    if (num1 >= num2 && num1 >= num3)
+        return num1
+    else if (num2 >= num1 && num2 >= num3)
+        return num2
+    else if (num3 >= num1 && num3 >= num2)
+        return num3
+}
+
+console.log('Exercise 6 Result:', maxOfThree(10,6,8));
+console.log(`=================================================`)
+
+
+
+//Excersise 7: calculateTip() -> using decleration fucntion
+function calculateTip(bill, tipPercentage){
+    let tip = bill/100 * tipPercentage
+    return tip
+}
+
+console.log('Exercise 7 Result:', calculateTip(100, 50));
+console.log(`=================================================`)
+
+
+
+//Excersise 8: convertTemperature() -> expression function
+const convertTemperature = function(temprature, degree){
+    if(degree === "C" || degree === "c")
+        return temprature = (temprature *9/5) + 32
+    else if(degree === "F" || degree === "f")
+        return temprature = (temprature - 32) * 5/9
+    else {
+        return "Please enter F or C for degree"
+    }
+}
+
+console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+console.log(`=================================================`)
+
+
+
+//Excersise 9: basicCalculator() -> using arrow function
+const basicCalculator = (num1, num2, operation) => {
+    if(operation === "add")
+        return num1 + num2
+    else if(operation === "subtract")
+        return num1 - num2
+    else if(operation === "multiply")
+        return num1 * num2
+    else if(operation === "divide")
+        return num1 / num2
+    else{
+        return "Please provide a one of the following operations. add, subtract, multiply, divide"
+    }
+}
+
+console.log('Exercise 9 Result:', basicCalculator(10, 5, "divide"));
+console.log(`=================================================`)
+
+
