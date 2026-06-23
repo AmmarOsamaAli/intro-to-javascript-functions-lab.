@@ -157,7 +157,7 @@ const createUsername = function (firstName, lastName) {
     let sliceFirstName = firstName.slice(0, 3)
     let sliceLastName = lastName.slice(0, 3)
     let charCount = firstName.length + lastName.length
-    return `${sliceFirstName}, ${sliceLastName}, ${charCount}`
+    return `${sliceFirstName} ${sliceLastName} ${charCount}`
 }
 
 console.log('Exercise 11 Result:', createUsername("Ammar", "Ali"));
